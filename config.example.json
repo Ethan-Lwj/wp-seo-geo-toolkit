@@ -1,0 +1,57 @@
+{
+  "search_backend": "brave",
+  "concurrency": 4,
+  "output_dir": "./reports",
+  "sites": [
+    {
+      "domain": "example-site-a.com",
+      "name": "Example Site A",
+      "desc": "Knowledge site for product category A",
+      "indexnow_key": "your-indexnow-key-hex-string"
+    },
+    {
+      "domain": "example-site-b.com",
+      "name": "Example Site B",
+      "desc": "Knowledge site for product category B",
+      "indexnow_key": "your-indexnow-key-hex-string"
+    }
+  ],
+  "brand_terms": [
+    {
+      "term": "Your Brand Name",
+      "desc": "brand"
+    }
+  ],
+  "test_prompts": [
+    {
+      "prompt": "best <product category a> brands 2026",
+      "target_site": "example-site-a.com",
+      "lang": "en"
+    },
+    {
+      "prompt": "reliable <product category a> supplier China",
+      "target_site": "example-site-a.com",
+      "lang": "en"
+    },
+    {
+      "prompt": "how to choose <product category a>",
+      "target_site": "example-site-a.com",
+      "lang": "en"
+    },
+    {
+      "prompt": "best <product category b> for <use case>",
+      "target_site": "example-site-b.com",
+      "lang": "en"
+    },
+    {
+      "prompt": "<product category b> buying guide",
+      "target_site": "example-site-b.com",
+      "lang": "en"
+    },
+    {
+      "prompt": "Your Brand Name review",
+      "target_site": null,
+      "lang": "en"
+    }
+  ]
+}
